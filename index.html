@@ -5,7 +5,6 @@
   <title>hemlock café</title>
   <meta charset="UTF-8">
   <link rel="shortcut icon" href="files/favicon.png"/>
-  <script src="libraries/natalie.js"></script>
   <script src="texts.js"></script>
   <style>
     body {
@@ -52,6 +51,10 @@
   </div>
 
   <script>
+    function randomItem(array) {
+      return array[Math.floor(Math.random() * array.length)];
+    }
+    
     var main = document.getElementById("main");
     var text = randomItem(texts);
     main.innerHTML = text;
